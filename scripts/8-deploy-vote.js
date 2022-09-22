@@ -7,7 +7,7 @@ import sdk from "./1-initialize-sdk.js";
       name: "WokeDAO",
 
       // This is the location of our governance token, our ERC-20 contract!
-      voting_token_address: "0xCd8bC336cC4FA900Eb8eeb91D0F4b22fb448475c",
+      voting_token_address: "0x9DD9A5dcC9724b3c9df6f5025da1253F28793c04",
 
       // These parameters are specified in number of blocks. 
       // Assuming block time of around 13.14 seconds (for Ethereum)

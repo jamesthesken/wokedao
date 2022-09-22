@@ -13,9 +13,9 @@ const App = () => {
   console.log("👋 Address:", address);
 
   // Initialize our token contract
-  const token = useToken("0xCd8bC336cC4FA900Eb8eeb91D0F4b22fb448475c")
+  const token = useToken("0x9DD9A5dcC9724b3c9df6f5025da1253F28793c04")
   // Initialize our editionDrop contract
-  const editionDrop = useEditionDrop("0xEB819ae407662Ef9377F0311A9Fc67e88f3EcD87");
+  const editionDrop = useEditionDrop("0xD66A32265Cf792B2323eCFda84429a3d0d9d7E49");
   // State variable for us to know if user has our NFT.
   const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
   // isClaiming lets us easily keep a loading state while the NFT is minting.
@@ -179,12 +179,12 @@ const memberList = useMemo(() => {
     }
   };
 
-  if (address && (network?.[0].data.chain.id !== ChainId.Mumbai)) {
+  if (address && (network?.[0].data.chain.id !== ChainId.Goerli)) {
     return (
       <div className="unsupported-network">
-        <h2>Please connect to Mumbai</h2>
+        <h2>Please connect to Goerli</h2>
         <p>
-          This dapp only works on Polygon's Mumbai network, please switch networks
+          This dapp only works on Ethereum's Goerli testnet, please switch networks
           in your connected wallet.
         </p>
       </div>
