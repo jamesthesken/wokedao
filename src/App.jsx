@@ -21,7 +21,7 @@ const App = () => {
   // isClaiming lets us easily keep a loading state while the NFT is minting.
   const [isClaiming, setIsClaiming] = useState(false);
 
-  const vote = useVote("0xa7b092B4D1E8d0E7205f66B4CE8dBd15B0B24cC5");
+  const vote = useVote("0xDC01DCC07F5e1146740F1d892324426c39020755");
 
   const network = useNetwork();
 
